@@ -1,8 +1,8 @@
-const LoginView = ({ insights, onSubmit }) => (
+const LoginView = ({ onSubmit }) => (
   <div className="login-page">
     <div className="login-shell">
       <section className="brand-panel" aria-labelledby="brand-heading">
-        <div className="badge">Polaris Air Tech Corp</div>
+        <div className="badge">Polaris Prime Air Tech Corp</div>
         <h1 id="brand-heading">
           End-to-end visibility for every air conditioner in your network.
         </h1>
@@ -10,14 +10,6 @@ const LoginView = ({ insights, onSubmit }) => (
           Track procurement, warehouse levels, and service inventory from one
           secure workspace designed for HVAC distributors.
         </p>
-        <div className="insights" aria-label="Operational highlights">
-          {insights.map((item) => (
-            <div key={item.label} className="insight">
-              <span>{item.value}</span>
-              <p>{item.label}</p>
-            </div>
-          ))}
-        </div>
         <div className="support-card">
           <strong>Need access?</strong>
           <p>
